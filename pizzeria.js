@@ -2,16 +2,16 @@
 CODIGO A COMPLETAR PRUEBA DE EDITAR NIKO
 */
 
-function calculatePrice({
-  nPepperonis,
-  nBasils,
-  nMushrooms,
+function calcularPrecio({
+  cPepperonis,
+  cBasils,
+  cMushrooms,
   hasSauce,
   hasCheese
 }) {
   /*
-  Escribir una función calculatePrice que recibe los parámetros
-  nPepperonis, nBasils, nMushrooms, hasSauce y hasCheese (los primeros 
+  Escribir una función calcularPrecio que recibe los parámetros
+  cPepperonis, cBasils, cMushrooms, hasSauce y hasCheese (los primeros 
   tres son números, los últimos dos booleans). La función deberá retornar 
   el precio total, calculado considerando que:
 
@@ -26,9 +26,9 @@ function calculatePrice({
 }
 
 function displayInvoice({
-  nPepperonis,
-  nBasils,
-  nMushrooms,
+  cPepperonis,
+  cBasils,
+  cMushrooms,
   hasSauce,
   hasCheese
 }) {
@@ -59,10 +59,10 @@ function handleSubmit(event) {
   // Extraemos los valores del formulario usando el objeto FormData
   const formData = new FormData(event.target);
   // Creamos un objeto para contener las preferencias con su tipo apropiado
-  const ingredientsData = {
-    nPepperonis: +formData.get("pepperoniCount"),
-    nBasils: +formData.get("basilCount"),
-    nMushrooms: +formData.get("mushroomCount"),
+  const ingredientesData = {
+    cPepperonis: +formData.get("pepperoniCount"),
+    cBasils: +formData.get("basilCount"),
+    cMushrooms: +formData.get("mushroomCount"),
     hasSauce: formData.get("sauceCheck") !== null,
     hasCheese: formData.get("cheeseCheck") !== null
   };
@@ -76,16 +76,16 @@ function handleSubmit(event) {
 }
 
 function displayPizza({
-  nPepperonis,
-  nBasils,
-  nMushrooms,
+  cPepperonis,
+  cBasils,
+  cMushrooms,
   hasSauce,
   hasCheese
 }) {
   const ingredientsCount = {
-    pepperoni: nPepperonis,
-    basil: nBasils,
-    mushroom: nMushrooms
+    pepperoni: cPepperonis,
+    basil: cBasils,
+    mushroom: cMushrooms
   };
   for (const ingredient in ingredientsCount) {
     // Limpiamos la capa de ingredientes de la última ejecución
