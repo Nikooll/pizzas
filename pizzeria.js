@@ -1,5 +1,5 @@
 /*
-CODIGO A COMPLETAR, PRUEBA EDITAR DE NIKOOLl
+CODIGO A COMPLETAR, PRUEBA EDITAR
 */
 
 function calcularPrecio({
@@ -111,3 +111,7 @@ function displayPizza({
     ? cheeseLayer.classList.add("cheese")
     : cheeseLayer.classList.remove("cheese");
 }
+
+
+
+// Nikooll
