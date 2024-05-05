@@ -112,6 +112,10 @@ function displayPizza({
     : cheeseLayer.classList.remove("cheese");
 }
 
+<<<<<<< HEAD
+// Fundamentos gitFlow
+=======
 
 
 // Nikooll
+>>>>>>> 1.0.0
