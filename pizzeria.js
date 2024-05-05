@@ -111,3 +111,5 @@ function displayPizza({
     ? cheeseLayer.classList.add("cheese")
     : cheeseLayer.classList.remove("cheese");
 }
+
+// Fundamentos gitFlow
