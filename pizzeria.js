@@ -1,13 +1,13 @@
 /*
-CODIGO A COMPLETAR PRUEBA DE EDITAR NIKO
+CODIGO A COMPLETAR, PRUEBA EDITAR DE NIKOOLl
 */
 
-function calculatePrice({
-  nPepperonis,
-  nBasils,
-  nMushrooms,
-  hasSauce,
-  hasCheese
+function calcularPrecio({
+  cantidadPepperonis,
+  cantidadAlbahacas,
+  cantidadChampiñones,
+  llevaSalsa,
+  llevaQueso
 }) {
   /*
   Escribir una función calculatePrice que recibe los parámetros
@@ -25,7 +25,7 @@ function calculatePrice({
   // Retornar número
 }
 
-function displayInvoice({
+function calculatePrice({
   nPepperonis,
   nBasils,
   nMushrooms,
