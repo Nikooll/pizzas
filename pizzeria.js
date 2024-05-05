@@ -3,15 +3,23 @@ CODIGO A COMPLETAR, PRUEBA EDITAR
 */
 
 function calcularPrecio({
+<<<<<<< HEAD
   cantidadPepperonis,
   cantidadAlbahacas,
   cantidadChampiñones,
   llevaSalsa,
   llevaQueso
+=======
+  cPepperonis,
+  cBasils,
+  cMushrooms,
+  hasSauce,
+  hasCheese
+>>>>>>> c7135f0c0f2a7bbe092cc8b5df2ca35965dec416
 }) {
   /*
-  Escribir una función calculatePrice que recibe los parámetros
-  nPepperonis, nBasils, nMushrooms, hasSauce y hasCheese (los primeros 
+  Escribir una función calcularPrecio que recibe los parámetros
+  cPepperonis, cBasils, cMushrooms, hasSauce y hasCheese (los primeros 
   tres son números, los últimos dos booleans). La función deberá retornar 
   el precio total, calculado considerando que:
 
@@ -25,10 +33,17 @@ function calcularPrecio({
   // Retornar número
 }
 
+<<<<<<< HEAD
 function calculatePrice({
   nPepperonis,
   nBasils,
   nMushrooms,
+=======
+function displayInvoice({
+  cPepperonis,
+  cBasils,
+  cMushrooms,
+>>>>>>> c7135f0c0f2a7bbe092cc8b5df2ca35965dec416
   hasSauce,
   hasCheese
 }) {
@@ -59,10 +74,10 @@ function handleSubmit(event) {
   // Extraemos los valores del formulario usando el objeto FormData
   const formData = new FormData(event.target);
   // Creamos un objeto para contener las preferencias con su tipo apropiado
-  const ingredientsData = {
-    nPepperonis: +formData.get("pepperoniCount"),
-    nBasils: +formData.get("basilCount"),
-    nMushrooms: +formData.get("mushroomCount"),
+  const ingredientesData = {
+    cPepperonis: +formData.get("pepperoniCount"),
+    cBasils: +formData.get("basilCount"),
+    cMushrooms: +formData.get("mushroomCount"),
     hasSauce: formData.get("sauceCheck") !== null,
     hasCheese: formData.get("cheeseCheck") !== null
   };
@@ -76,16 +91,16 @@ function handleSubmit(event) {
 }
 
 function displayPizza({
-  nPepperonis,
-  nBasils,
-  nMushrooms,
+  cPepperonis,
+  cBasils,
+  cMushrooms,
   hasSauce,
   hasCheese
 }) {
   const ingredientsCount = {
-    pepperoni: nPepperonis,
-    basil: nBasils,
-    mushroom: nMushrooms
+    pepperoni: cPepperonis,
+    basil: cBasils,
+    mushroom: cMushrooms
   };
   for (const ingredient in ingredientsCount) {
     // Limpiamos la capa de ingredientes de la última ejecución
