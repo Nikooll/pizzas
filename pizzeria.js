@@ -1,5 +1,5 @@
 /*
-CODIGO A COMPLETAR, PRUEBA EDITAR DE NIKOOLl
+CODIGO A COMPLETAR, PRUEBA EDITAR
 */
 
 function calcularPrecio({
@@ -112,4 +112,10 @@ function displayPizza({
     : cheeseLayer.classList.remove("cheese");
 }
 
+<<<<<<< HEAD
 // Fundamentos gitFlow
+=======
+
+
+// Nikooll
+>>>>>>> 1.0.0
